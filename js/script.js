@@ -5,6 +5,8 @@ $(document).ready(function () {
             $("#moreImages").removeClass("hide");
             $("#loadMore").removeClass("moreImg");
             $("#loadMore").addClass("lessImg");
+            AOS.refresh();
+            console.log('Refreshingg....')
         } else {
             $("#moreImages").slideUp('slow');
             $("#moreImages").addClass("hide");
@@ -13,6 +15,8 @@ $(document).ready(function () {
             $('html, body').animate({
                 scrollTop: $("#beforeHide").offset().top
             }, 400);
+            AOS.refresh();
+            console.log('Refreshingg....')
         }
     });
 });
@@ -23,24 +27,6 @@ slideTimer = setInterval(function () {
     $("#loadMore").addClass("moreImg");
     $("#loadMore").removeClass("lessImg");
 }, 50000);
-
-// function loadImages() {
-//     var img = document.getElementById("moreImages");
-//     var load = document.getElementById("loadMore");
-
-
-//     if (img.classList.contains("hide")) {
-//         // img.style.display = "block";
-//         load.classList.remove("moreImg");
-//         load.classList.add("lessImg");
-//         img.classList.remove("hide");
-//     } else {
-//         // img.style.display = "none";
-//         load.classList.add("moreImg");
-//         img.classList.add("hide");
-//     }
-
-// };
 
 $(document).ready(function () {
     $('.first-button').on('click', function () {
@@ -54,24 +40,19 @@ $(document).ready(function () {
     });
 });
 
-
-// var loadR;
-
-// function loadRR() {
-//     loadR = setTimeout(showPage, 2500);
-// }
-// function showPage() {
-//     document.getElementById("loadPage").style.display = "none";
-//     document.getElementById("body").style.height = "100% !important";
-//     document.getElementById("root").style.display = "block";
-// }
-
 $(document).ready(function () {
     setTimeout(function () {
         $("#loadPage").slideUp('slow');
         // $("#root").slideDown('slow');
         $('body').css('height', '100% !important');
         $('#root').css('display', 'block');
-    }, 4000);
+        AOS.init({
+            delay: 200,
+            duration: 4000,
+            startEvent: 'DOMContentLoaded',
+        });
+        AOS.refresh();
+        console.log('Refreshingg....')
+    }, 3100);
 
 });
