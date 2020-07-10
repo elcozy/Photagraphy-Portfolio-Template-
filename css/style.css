@@ -44,7 +44,7 @@ body {
 .header {
   background-position: center;
   position: unset;
-  background-image: url(/img/header.svg);
+  background-image: url("/img/header.svg");
   /* background-position-x: 100%; */
   background-repeat: no-repeat;
   height: calc(100vh - 61px);
