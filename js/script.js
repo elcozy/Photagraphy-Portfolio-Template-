@@ -53,6 +53,6 @@ $(document).ready(function () {
         });
         AOS.refresh();
         console.log('Refreshingg....')
-    }, 3100);
+    }, 2500);
 
 });
