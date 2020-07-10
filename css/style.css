@@ -101,8 +101,7 @@ img {
   width: 100%;
 }
 .contact {
-  background: url(../img/contact.png) no-repeat;
-  background-size: cover;
+  background: url("../img/contact.png");
   width: 100%;
 }
 .contactSection {
