@@ -28,21 +28,65 @@
 // };
 
 // load more 
-function loadImages() {
-    var img = document.getElementById("moreImages");
-    var load = document.getElementById("loadMore");
+// function loadImages() {
+//     var img = document.getElementById("moreImages");
+//     var load = document.getElementById("loadMore");
 
 
-    if (img.style.display === "none") {
-        img.style.display = "inline-block";
-        load.classList.remove("moreImg");
-    } else {
-        img.style.display = "none";
-        load.classList.add("moreImg");
-    }
+//     if (img.style.display === "none") {
+//         img.style.display = "block";
+//         load.classList.remove("moreImg");
+//     } else {
+//         img.style.display = "none";
+//         load.classList.add("moreImg");
+//     }
 
-};
+// };
 
+$(document).ready(function () {
+
+    $("#loadMore").click(function () {
+        if ($("#moreImages").hasClass("hide")) {
+            $("#moreImages").slideDown();
+            $("#moreImages").removeClass("hide");
+            $("#loadMore").removeClass("moreImg");
+            $("#loadMore").addClass("lessImg");
+
+        } else {
+            $("#moreImages").slideUp();
+            $("#moreImages").addClass("hide");
+            $("#loadMore").addClass("moreImg");
+            $("#loadMore").removeClass("lessImg");
+            $('html, body').animate({
+                scrollTop: $("#beforeHide").offset().top
+            }, 400);
+        }
+    });
+});
+
+slideTimer = setInterval(function () {
+    $('#moreImages').slideUp();
+    $("#moreImages").addClass("hide");
+    $("#loadMore").addClass("moreImg");
+    $("#loadMore").removeClass("lessImg");
+}, 50000);
+// function loadImages() {
+//     var img = document.getElementById("moreImages");
+//     var load = document.getElementById("loadMore");
+
+
+//     if (img.classList.contains("hide")) {
+//         // img.style.display = "block";
+//         load.classList.remove("moreImg");
+//         load.classList.add("lessImg");
+//         img.classList.remove("hide");
+//     } else {
+//         // img.style.display = "none";
+//         load.classList.add("moreImg");
+//         img.classList.add("hide");
+//     }
+
+// };
 
 $(document).ready(function () {
 

@@ -29,7 +29,7 @@ html {
   z-index: 999999999;
 }
 .carousel-inner {
-  max-height: calc(100vh + 93px);
+  max-height: calc(100vh + 65px);
 }
 .scroll-indicator-controller,
 .llett {
@@ -67,7 +67,7 @@ body {
   font-weight: bold;
   font-size: 1.01rem !important;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .title-large {
   font-style: normal;
@@ -114,6 +114,7 @@ img {
   background-color: transparent !important;
   color: #fff;
 }
+
 .form-control:focus {
   color: #fff;
   border-color: var(--main-txt-color);
@@ -139,7 +140,7 @@ input:-internal-autofill-selected {
   cursor: pointer;
 }
 .photo-images img:hover {
-  opacity: 0.6;
+  opacity: 0.6 !important;
 }
 .image-row {
   padding-top: 5px;
@@ -182,6 +183,16 @@ section:not(header):before {
 }
 .footer-texts a {
   color: #fff;
+  opacity: 0.5;
+}
+.footer-texts a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+}
+.footer-texts a {
+  padding-bottom: 0 !important;
 }
 /* button.custom {
   padding: 0.5rem 1.5rem;
@@ -193,16 +204,11 @@ button.custom:hover {
   color: #fff;
 }
 
-.image-row {
-  /* height: 100px;
-  width: 45%;
-  color: #fff;
-  font-size: 24px;
-  background-color: grey;
-  margin: 5px;
-  border: 1px solid lightgrey; */
+.hide {
+  height: 0%;
   /* display: none; */
 }
+
 #moreImages {
   display: none;
 }
@@ -220,7 +226,7 @@ button.custom:hover {
   border: 1px solid transparent;
   transition: 0.3s;
 }
-.imageButton {
+.lessImg {
   /* background: red; */
   background: url("../img/minus-circle-outlined.svg") no-repeat center;
   background-size: 50px 50px;
@@ -257,53 +263,9 @@ p {
   font-size: 0.9rem !important;
   color: #fff;
   font-weight: normal;
-  line-height: 22px;
+  line-height: 1.6rem;
 }
 
-/* md max  */
-@media (max-width: 768px) {
-  .carousel-butt {
-    display: none !important;
-  }
-  .footer-texts a,
-  .footer-texts p {
-    font-size: 0.5rem;
-  }
-  .scroll-indicator-controller {
-    display: none;
-  }
-  .skills-text {
-    font-size: 12px;
-  }
-  .headr h1 {
-    font-size: 1.4rem;
-  }
-  .button-outlined {
-    font-size: 11px;
-    padding: 0.4rem 0.9rem !important;
-  }
-  .tiny-purple {
-    font-size: 0.9rem !important;
-    margin-bottom: 0.3rem;
-  }
-  .mynameis {
-    font-size: 1rem;
-    width: 65% !important;
-  }
-  .title-large {
-    font-size: 1.6rem;
-  }
-  .custom-p,
-  .contact-details p {
-    font-size: 0.8rem !important;
-  }
-  .contact-details h5 {
-    font-size: 0.9rem;
-  }
-  .btn {
-    font-size: 0.8rem;
-  }
-}
 /* 
 .navbar-dark .navbar-toggler {
   border: none;
@@ -528,7 +490,6 @@ p {
   position: absolute;
   top: 50%;
   right: -26px;
-  color: #fff;
   width: 100%;
 }
 .carousel .carousel-control-prev-icon {
@@ -548,9 +509,9 @@ p {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   /* Use to adjust size of icons */
-  width: 5rem;
+  width: 3rem;
   background: no-repeat 50%/100% 100%;
-  height: 6.2rem;
+  height: 5.2rem;
 }
 
 .carousel-control-next,
@@ -584,4 +545,82 @@ p {
   border: 0;
   border-bottom: 1px solid;
   border-radius: 0;
+}
+
+/* md max  */
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  .main-text {
+    top: 40%;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 2.5rem;
+  }
+  .tiny-purple {
+    /* margin-bottom: 0.8rem; */
+  }
+}
+@media (max-width: 768px) {
+  .carousel-butt {
+    display: none !important;
+  }
+  .footer-texts a,
+  .footer-texts p {
+    font-size: 0.5rem;
+  }
+  .scroll-indicator-controller {
+    display: none;
+  }
+  .skills-text {
+    font-size: 12px;
+  }
+  .headr h1 {
+    font-size: 1.4rem;
+  }
+  .button-outlined {
+    font-size: 11px;
+    padding: 0.4rem 0.9rem !important;
+  }
+  .tiny-purple {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.3rem;
+  }
+  .mynameis {
+    font-size: 1rem;
+    width: 65% !important;
+  }
+  .title-large {
+    font-size: 1.6rem;
+  }
+  .custom-p,
+  .contact-details p {
+    font-size: 0.8rem !important;
+  }
+  .contact-details h5 {
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 540px;
+}
+.image-box object {
+  max-width: 100%;
+  transition: all 0.1s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.image-box object:hover {
+  transform: scale(1.26, 1.19) !important;
 }
