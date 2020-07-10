@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  width: 100%;
+}
 .bg-main {
   background: #050315 !important;
 }
@@ -158,7 +161,8 @@ input:-internal-autofill-selected {
 .close {
   position: absolute;
   top: 2%;
-  right: 2%;
+  right: 3%;
+  width: 30px;
 }
 .modal-backdrop {
   background: rgba(5, 3, 21, 0.9) !important;
@@ -189,7 +193,7 @@ section:not(header):before {
   opacity: 1;
   text-decoration: underline;
   text-decoration: none;
-  border-bottom: 3px solid white;
+  border-bottom: 1.5px solid white;
 }
 .footer-texts a {
   padding-bottom: 0 !important;
@@ -572,7 +576,7 @@ p {
   }
   .footer-texts a,
   .footer-texts p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   .scroll-indicator-controller {
     display: none;
@@ -630,4 +634,133 @@ p {
 }
 ol {
   margin-bottom: 0.2rem;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 50% auto;
+  transform: rotate(-45deg);
+  font-size: 0;
+  line-height: 0;
+  animation: rotate-loader 5s infinite;
+  padding: 25px;
+  border: 1px solid #c280ff;
+}
+.loader .loader-inner {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+.loader .loading {
+  position: absolute;
+  background: #c280ff;
+}
+.loader .one {
+  width: 100%;
+  bottom: 0;
+  height: 0;
+  animation: loading-one 1s infinite;
+}
+.loader .two {
+  width: 0;
+  height: 100%;
+  left: 0;
+  animation: loading-two 1s infinite;
+  animation-delay: 0.25s;
+}
+.loader .three {
+  width: 0;
+  height: 100%;
+  right: 0;
+  animation: loading-two 1s infinite;
+  animation-delay: 0.75s;
+}
+.loader .four {
+  width: 100%;
+  top: 0;
+  height: 0;
+  animation: loading-one 1s infinite;
+  animation-delay: 0.5s;
+}
+@keyframes loading-one {
+  0% {
+    height: 0;
+    opacity: 1;
+  }
+  12.5% {
+    height: 100%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+@keyframes loading-two {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  12.5% {
+    width: 100%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+@keyframes rotate-loader {
+  0% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-45deg);
+  }
+  25% {
+    transform: rotate(-135deg);
+  }
+  45% {
+    transform: rotate(-135deg);
+  }
+  50% {
+    transform: rotate(-225deg);
+  }
+  70% {
+    transform: rotate(-225deg);
+  }
+  75% {
+    transform: rotate(-315deg);
+  }
+  95% {
+    transform: rotate(-315deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+
+#loadPage {
+  z-index: 999999999999999999999;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background: var(--main-bg);
+  height: 100vh;
+  width: 100%;
+}
+
+.no-js #loadPage {
+  display: none;
+}
+.no-js #root {
+  display: block;
 }

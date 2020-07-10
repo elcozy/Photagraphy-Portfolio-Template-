@@ -1,59 +1,12 @@
-// easyscroll 
-// easyScrollDots({
-
-//     // sets to true if you have a fixed navigation
-//     'fixedNav': true,
-
-//     // unique ID of your fixed navigation
-//     'fixedNavId': 'myNavbar',
-
-//     // set to true if your navigation is only sticky when scrolling up
-//     'fixedNavUpward': false
-
-// });
-
-
-// nav bar blurr on scroll 
-// var myNav = document.getElementById('myNavbar');
-// window.onscroll = function () {
-//     "use strict";
-//     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
-//         myNav.classList.add("nav-blurred");
-//         myNav.classList.remove("nav-transparent");
-//     }
-//     else {
-//         myNav.classList.add("nav-transparent");
-//         myNav.classList.remove("nav-blurred");
-//     }
-// };
-
-// load more 
-// function loadImages() {
-//     var img = document.getElementById("moreImages");
-//     var load = document.getElementById("loadMore");
-
-
-//     if (img.style.display === "none") {
-//         img.style.display = "block";
-//         load.classList.remove("moreImg");
-//     } else {
-//         img.style.display = "none";
-//         load.classList.add("moreImg");
-//     }
-
-// };
-
 $(document).ready(function () {
-
     $("#loadMore").click(function () {
         if ($("#moreImages").hasClass("hide")) {
-            $("#moreImages").slideDown();
+            $("#moreImages").slideDown('slow');
             $("#moreImages").removeClass("hide");
             $("#loadMore").removeClass("moreImg");
             $("#loadMore").addClass("lessImg");
-
         } else {
-            $("#moreImages").slideUp();
+            $("#moreImages").slideUp('slow');
             $("#moreImages").addClass("hide");
             $("#loadMore").addClass("moreImg");
             $("#loadMore").removeClass("lessImg");
@@ -70,6 +23,7 @@ slideTimer = setInterval(function () {
     $("#loadMore").addClass("moreImg");
     $("#loadMore").removeClass("lessImg");
 }, 50000);
+
 // function loadImages() {
 //     var img = document.getElementById("moreImages");
 //     var load = document.getElementById("loadMore");
@@ -89,19 +43,35 @@ slideTimer = setInterval(function () {
 // };
 
 $(document).ready(function () {
-
     $('.first-button').on('click', function () {
-
         $('.animated-icon1').toggleClass('open');
     });
     $('.second-button').on('click', function () {
-
         $('.animated-icon2').toggleClass('open');
     });
     $('.third-button').on('click', function () {
-
         $('.animated-icon3').toggleClass('open');
     });
 });
 
 
+// var loadR;
+
+// function loadRR() {
+//     loadR = setTimeout(showPage, 2500);
+// }
+// function showPage() {
+//     document.getElementById("loadPage").style.display = "none";
+//     document.getElementById("body").style.height = "100% !important";
+//     document.getElementById("root").style.display = "block";
+// }
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $("#loadPage").slideUp('slow');
+        // $("#root").slideDown('slow');
+        $('body').css('height', '100% !important');
+        $('#root').css('display', 'block');
+    }, 4000);
+
+});
