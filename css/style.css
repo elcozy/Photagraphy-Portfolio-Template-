@@ -44,7 +44,7 @@ body {
 .header {
   background-position: center;
   position: unset;
-  background-image: url("/img/header.svg");
+  background-image: url("../img/header.svg");
   /* background-position-x: 100%; */
   background-repeat: no-repeat;
   height: calc(100vh - 61px);
@@ -92,7 +92,7 @@ img {
   width: 100%;
 }
 .contact {
-  background: url("/img/contact.png");
+  background: url("../img/contact.png");
   width: 100%;
   /* height: 500px; */
 }
@@ -211,11 +211,11 @@ button.custom:hover {
 }
 .imageButton {
   /* background: red; */
-  background: url("/img/minus-circle-outlined.svg") no-repeat center;
+  background: url("../img/minus-circle-outlined.svg") no-repeat center;
   background-size: 50px 50px;
 }
 .moreImg {
-  background: url("/img/plus-circle-outlined.svg") no-repeat center;
+  background: url("../img/plus-circle-outlined.svg") no-repeat center;
   background-size: 50px 50px;
 }
 #loadMore:hover,
