@@ -566,6 +566,10 @@ p {
   .carousel-butt {
     display: none !important;
   }
+  .footer-texts span {
+    min-width: 310px;
+    justify-content: center !important;
+  }
   .footer-texts a,
   .footer-texts p {
     font-size: 0.5rem;
@@ -623,4 +627,7 @@ p {
 
 .image-box object:hover {
   transform: scale(1.26, 1.19) !important;
+}
+ol {
+  margin-bottom: 0.2rem;
 }
