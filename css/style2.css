@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*--- navigation bar ---*/
+.btn {
+  border-radius: 0;
+}
+.bg-yellow {
+  background: #f2c94c;
+}
+.text-yellow {
+  color: #f2c94c;
+}
+.bg-black {
+  background: #000000;
+}
+.progress {
+  border-radius: 0;
+}
+.nav-link,
+.navbar-brand {
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #ffffff;
+}
+.nav-link:hover,
+.navbar-brand span {
+  color: #f2c94c;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 400px;
+  }
+}
+.description {
+  text-align: center;
+}
+.description h1 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 3rem;
+  /* font-size: 60px; */
+}
+.description p {
+  color: #fff;
+  font-weight: normal;
+  /* font-size: 1rem; */
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.descripfation button,
+.contactcontactM button {
+  border: 1px solid #f2c94c;
+  background: #f2c94c;
+  border-radius: 0;
+  color: #000;
+  float: left;
+}
+/* .description button:hover,
+.resumeView button:hover,
+.contactM button:hover {
+  border: 1px solid #fff;
+  background: #f2c94c;
+  filter: brightness(95%);
+  color: #000;
+} */
+.btn-lg {
+  padding: 0.5rem 1.5rem;
+}
+
+.aboutMe .img {
+  background-image: url("../img/pic2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 400px;
+  margin: 1.25rem 0;
+}
+.description2 h1,
+.resumeView h1,
+.servicesC h1,
+.clientReview h1,
+.contactMe h1 {
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+}
+.description2 p,
+.resumeView p,
+.servicesC p,
+.clientReview p {
+  text-align: left;
+  font-size: 24px;
+  font-weight: normal;
+}
+.aboutMeProg h1 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.resumeC {
+  background: #faf3dd;
+  padding-top: 3.2rem !important;
+  padding-bottom: 3.2rem !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.resumeView {
+  text-align: center;
+}
+.resumeView button {
+  border: 1px solid #f2c94c;
+  background: #f2c94c;
+  border-radius: 0;
+  color: #000;
+}
+.resumeView h1,
+.resumeView p,
+.servicesC p,
+.servicesC h1,
+.clientReview h1,
+.clientReview p,
+.contactMe h1 {
+  text-align: center;
+}
+.servicesList h1,
+.reachContacts h5 {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.servicesList p,
+.reachContacts p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+}
+.servicesC {
+  background: #ffffff;
+}
+.worksRecent button:hover {
+  border-color: #6c757d;
+}
+.progress-text {
+  position: absolute;
+  color: #000000;
+  font-weight: normal;
+  font-size: 14px;
+  top: 4px;
+}
+
+.progress-text.p80 {
+  left: 77%;
+}
+.progress-text.p55 {
+  left: 52%;
+}
+.progress-text.p70 {
+  left: 67%;
+}
+.progress {
+  height: 8px;
+}
+.testimonial .carousel-item {
+  min-height: 450px;
+  background: #ececec;
+  color: #000;
+  font-size: 24px;
+}
+.testimonial .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  opacity: 1;
+  border: 0;
+}
+.testimonial .carousel-indicators li.active {
+  background-color: #ddae1d;
+}
+.carousel-caption {
+  color: #000000;
+}
+.clientReview {
+  background: #ececec;
+}
+.testimonial .carousel-caption {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.testimonial .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.testimonial .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 9999;
+}
+.testimonial h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.servicesImages img {
+  cursor: pointer;
+  width: 567px;
+  height: 407px;
+  width: 448px;
+  height: 346px;
+}
+.servicesImages img:hover {
+  border-top: #6c757d solid 5px;
+  border-width: 90%;
+}
+.partners,
+.contactMe {
+  background: #ffffff;
+}
+.reachContacts h5,
+.reachContacts p {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .partner .col-4:nth-child(4) {
+    margin-left: auto;
+  }
+  .partner .col-4:nth-child(5) {
+    margin-right: auto;
+  }
+  footer {
+    text-align: center !important;
+  }
+
+  p.m-0.text-right {
+    text-align: center !important;
+  }
+}
+@media (min-width: 768px) {
+  .partner .col-md-3:nth-child(5) {
+    margin: auto;
+  }
+  .servicesImages img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+}
+.partner .col-md-3:nth-child(1) {
+  padding-left: 0;
+}
+@media (max-width: 580px) {
+  .touch {
+    padding: 0 40px;
+  }
+  .partner .col-md-3:nth-child(1) {
+    margin-right: auto;
+    padding-left: 0;
+  }
+  .partner .col-md-3:nth-child(2) {
+    margin: auto;
+    padding-right: 0;
+  }
+  .partner .col-md-3:nth-child(3) {
+    margin: auto;
+  }
+  .partner .col-md-3:nth-child(4) {
+    margin: auto;
+  }
+  .partner .col-md-3:nth-child(5) {
+    margin: auto;
+  }
+  .description h1:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+footer {
+  width: 100%;
+  background: #000000;
+  bottom: 0;
+  color: #ffffff;
+  padding-bottom: 17px;
+}
+.fa {
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+.fa-twitter:hover,
+.fa-skype:hover {
+  color: #00aff0;
+}
+.fa-youtube-square:hover {
+  color: #f80000;
+}
+.fa-snapchat-ghost:hover {
+  color: #fbff0c;
+}
+.fa-facebook-official:hover {
+  color: rgb(64, 100, 173);
+}
+.fa::before {
+  padding-left: 0.7rem;
+}
+@media (max-width: 482px) {
+  .servicesImages img {
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+  }
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+input.form-control.pt-4.pb-5.mb-2 {
+  padding-bottom: 90px !important;
+}
+.contactMe {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

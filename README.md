@@ -1,1 +1,1 @@
-# Photagraphy-Portfolio-Template-
+# blog-website-template
