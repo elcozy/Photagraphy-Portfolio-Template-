@@ -16,7 +16,6 @@ $(document).ready(function () {
                 scrollTop: $("#beforeHide").offset().top
             }, 400);
             AOS.refresh();
-            console.log('Refreshingg....')
         }
     });
 });
@@ -52,7 +51,6 @@ $(document).ready(function () {
             startEvent: 'DOMContentLoaded',
         });
         AOS.refresh();
-        console.log('Refreshingg....')
     }, 2500);
 
 });
