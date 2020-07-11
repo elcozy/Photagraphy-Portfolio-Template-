@@ -190,9 +190,6 @@ section:not(header):before {
 .footer-texts a {
   padding-bottom: 0 !important;
 }
-/* button.custom {
-  padding: 0.5rem 1.5rem;
-} */
 button.custom:hover {
   background: #c280ffe1;
   filter: brightness(95%);
@@ -246,7 +243,6 @@ p {
   color: #ffffff;
   text-align: left;
   font-size: 3.5rem;
-  /* font-size: 60px; */
 }
 .custom-p,
 .contact-details p {
@@ -445,13 +441,11 @@ p {
   /* change fill="currentColor" to %23fff to make it white  */
   background-image: url("../img/right.svg");
   background-size: cover;
-  /* opacity: 0.4; */
 }
 .carousel .carousel-control-next-icon {
   /* change fill="currentColor" to %23fff to make it white  */
   background-image: url("../img/left.svg");
   background-size: cover;
-  /* opacity: 0.4; */
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
