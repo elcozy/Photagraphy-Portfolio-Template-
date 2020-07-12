@@ -129,6 +129,15 @@
       display: block !important;
       visibility: visible !important;
     }
+
+    .intro2 {
+      background-color: #444444;
+      border: 2px solid #363636;
+      border-radius: 5px;
+      color: #ffffff;
+      font-style: italic;
+      padding: 10px 20px;
+    }
   </style>
 </head>
 
@@ -136,8 +145,7 @@
   <div id="documenter_sidebar">
     <a href="#documenter_cover" id="documenter_logo"></a>
     <ul id="documenter_nav">
-      <li><a class="current" href="#documenter_cover">Start</a></li>
-
+      <li><a class="current" href="#documenter_cover">Introduction</a></li>
       <li>
         <a href="#files_structure" title="Files Structure">Files Structure</a>
       </li>
@@ -149,7 +157,6 @@
       </li>
       <li><a href="#javascript" title="JavaScript">JavaScript</a></li>
       <li><a href="#fonts" title="Fonts">Fonts</a></li>
-      <li><a href="#icons" title="Icons">Icons</a></li>
       <li><a href="#logo" title="Logo">Logo</a></li>
       <li>
         <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
@@ -160,7 +167,7 @@
     </div>
   </div>
   <div id="documenter_content">
-    <section id="documenter_cover">
+    <div id="documenter_cover" style="max-width: 1000px;">
       <h1>Neon Photography</h1>
       <h2>Responsive HTML5 Template</h2>
       <div id="documenter_buttons"></div>
@@ -168,7 +175,7 @@
       <ul>
         <li>created: 10/07/2020</li>
         <li>latest update: 11/07/2020</li>
-        <li>by: TeamSyntax | Reynolds | Sharon</li>
+        <li>by: TeamSyntax</li>
 
         <li>
           email:
@@ -176,48 +183,77 @@
             href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;">&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;</a>
         </li>
       </ul>
-      <p></p>
-    </section>
+      <br><br>
+      </section>
 
-    <section id="files_structure">
-      <div class="page-header">
-        <h3>Files Structure</h3>
-        <hr class="notop" />
-      </div>
-      <pre class="prettyprint lang-html linenums">
+      <section id="files_structure">
+        <div class="page-header">
+          <h3>Files Structure</h3>
+
+          <hr class="notop" />
+        </div>
+        <pre class="prettyprint lang-html linenums">
 - /css        - (Template CSS)
 - /img        - (All Images)
 - /js         - (Template JS)</pre>
-      <p>
-        &nbsp;
-      </p>
-    </section>
-    <section id="html_structure">
-      <div class="page-header">
-        <h3>HTML Structure</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        The template is based on Bootstrap Framework -
-        http://getbootstrap.com/
-      </div>
-      <div>
-        The default Bootstrap grid system utilizes 12 columns, making for a
-        1170px wide depending on your viewport.
-      </div>
-      <div>
-        Below 480px viewports, the columns become fluid and stack vertically.
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        Create a .row and add the appropriate number of .col-* columns.
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
+        <p>
+          &nbsp;
+        </p>
+        <p style="width: 100%;">This documentation is to help you regarding each step of customization. Please go
+          through
+          the documentation
+          carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge
+          is
+          required to customize this template. You may learn basics <a href="http://www.w3schools.com/"
+            target="_blank">here</a>, <a href="https://developer.mozilla.org/" target="_blank">here</a> and <a
+            href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" target="_blank">here</a>. </p>
+
+        <h4>Requirements</h4>
+        <p>You will need the following sofwares to customize this template.</p>
+        <ol>
+          <li style="list-style: circle !important;">Code Editing Software (eg: Vistual Studio Code, Sublime Text or
+            Notepad)</li>
+          <li style="list-style: circle !important;">Web Browser for testing (eg: Google Chrome or Mozilla Firefox)</li>
+        </ol>
+        <div class="intro2 clearfix">
+          <p style="width: 100%; margin: 0;"><img style="height: 15px; padding-right: 10px;"
+              src="./assets/images/warn.png" alt="">
+            Be
+            careful while%
+            editing the template. If
+            not edited properly,
+            the
+            design layout may break completely.
+          </p>
+        </div>
+      </section>
+      <section id="html_structure">
+        <div class="page-header">
+          <h3>HTML Structure</h3>
+          <hr class="notop" />
+        </div>
+
+        <div>
+          The template is based on Bootstrap Framework -
+          http://getbootstrap.com/
+        </div>
+        <div>
+          The default Bootstrap grid system utilizes 12 columns, making for a
+          1170px wide depending on your viewport.
+        </div>
+        <div>
+          Below 480px viewports, the columns become fluid and stack vertically.
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          Create a .row and add the appropriate number of .col-* columns.
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <!-- <div>
         <pre class="prettyprint lang-html linenums">
 &lt;div class=&quot;row&quot;&gt;
         
@@ -229,56 +265,258 @@
         &lt;/div&gt;
 
 &lt;/div&gt;</pre>
-      </div>
-      <p>
-        If you need more information, please visit this site:
-        <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a>
-      </p>
-    </section>
-    <section id="css_structure">
-      <div class="page-header">
-        <h3>CSS Structure</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        The organization of the CSS is one of our priorities.
-      </div>
-      <div>
-        These are the CSS file we&#39;re using in the template:
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <pre class="prettyprint lang-html linenums">
+      </div> -->
+        <h4 style="font-size: 21px;">Bootstrap Grid System</h4>
+        <div id="highlighter_467873" class="syntaxhighlighter  html">
+          <table border="0" cellpadding="0" cellspacing="0" style="width: 100% !important ;">
+            <tbody>
+              <tr>
+                <td class="gutter">
+                  <div class="line number1 index0 alt2">1</div>
+                  <div class="line number2 index1 alt1 highlighted">2</div>
+                  <div class="line number3 index2 alt2">3</div>
+                  <div class="line number4 index3 alt1 highlighted">4</div>
+                  <div class="line number5 index4 alt2">5</div>
+                  <div class="line number6 index5 alt1 highlighted">6</div>
+                  <div class="line number7 index6 alt2">7</div>
+                </td>
+                <td class="code">
+                  <div class="container">
+                    <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code
+                        class="html keyword">div</code> <code class="html color1">class</code><code
+                        class="html plain">=</code><code class="html string">"container"</code><code
+                        class="html plain">&gt;</code></div>
+                    <div class="line number2 index1 alt1 highlighted"><code
+                        class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code
+                        class="html keyword">div</code> <code class="html color1">class</code><code
+                        class="html plain">=</code><code class="html string">"row"</code><code
+                        class="html plain">&gt;</code></div>
+                    <div class="line number3 index2 alt2"><code
+                        class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                        class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                        class="html color1">class</code><code class="html plain">=</code><code
+                        class="html string">"col-lg-12 col-md-12 col-sm-12 col-xs-12"</code><code
+                        class="html plain">&gt;</code></div>
+                    <div class="line number4 index3 alt1 highlighted"><code
+                        class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                        class="html plain">YOUR CODES GOES HERE</code></div>
+                    <div class="line number5 index4 alt2"><code
+                        class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                        class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                        class="html plain">&gt;</code></div>
+                    <div class="line number6 index5 alt1 highlighted"><code
+                        class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code
+                        class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                    <div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code
+                        class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Our you can use the grid system with 2 columns like this</p>
+
+        <div>
+          <div id="highlighter_782036" class="syntaxhighlighter  html">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100% !important ;">
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1 highlighted">2</div>
+                    <div class="line number3 index2 alt2">3</div>
+                    <div class="line number4 index3 alt1 highlighted">4</div>
+                    <div class="line number5 index4 alt2">5</div>
+                    <div class="line number6 index5 alt1 highlighted">6</div>
+                    <div class="line number7 index6 alt2">7</div>
+                    <div class="line number8 index7 alt1 highlighted">8</div>
+                    <div class="line number9 index8 alt2">9</div>
+                    <div class="line number10 index9 alt1 highlighted">10</div>
+                  </td>
+                  <td class="code">
+                    <div class="container">
+                      <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code
+                          class="html keyword">div</code> <code class="html color1">class</code><code
+                          class="html plain">=</code><code class="html string">"container"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number2 index1 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code
+                          class="html keyword">div</code> <code class="html color1">class</code><code
+                          class="html plain">=</code><code class="html string">"row"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number3 index2 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                          class="html color1">class</code><code class="html plain">=</code><code
+                          class="html string">"col-lg-6 col-md-6 col-sm-6 col-xs-12"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number4 index3 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">YOUR CODES GOES HERE</code></div>
+                      <div class="line number5 index4 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number6 index5 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                          class="html color1">class</code><code class="html plain">=</code><code
+                          class="html string">"col-lg-6 col-md-6 col-sm-6 col-xs-12"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number7 index6 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">YOUR CODES GOES HERE</code></div>
+                      <div class="line number8 index7 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number9 index8 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code
+                          class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                      <div class="line number10 index9 alt1 highlighted"><code class="html plain">&lt;/</code><code
+                          class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p>Our you can use the grid system with 3 columns like this;</p>
+
+        <div>
+          <div id="highlighter_993195" class="syntaxhighlighter  html">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100% !important ;">
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1 highlighted">2</div>
+                    <div class="line number3 index2 alt2">3</div>
+                    <div class="line number4 index3 alt1 highlighted">4</div>
+                    <div class="line number5 index4 alt2">5</div>
+                    <div class="line number6 index5 alt1 highlighted">6</div>
+                    <div class="line number7 index6 alt2">7</div>
+                    <div class="line number8 index7 alt1 highlighted">8</div>
+                    <div class="line number9 index8 alt2">9</div>
+                    <div class="line number10 index9 alt1 highlighted">10</div>
+                    <div class="line number11 index10 alt2">11</div>
+                    <div class="line number12 index11 alt1 highlighted">12</div>
+                    <div class="line number13 index12 alt2">13</div>
+                  </td>
+                  <td class="code">
+                    <div class="container">
+                      <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code
+                          class="html keyword">div</code> <code class="html color1">class</code><code
+                          class="html plain">=</code><code class="html string">"container"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number2 index1 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code
+                          class="html keyword">div</code> <code class="html color1">class</code><code
+                          class="html plain">=</code><code class="html string">"row"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number3 index2 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                          class="html color1">class</code><code class="html plain">=</code><code
+                          class="html string">"col-lg-4 col-md-6 col-sm-6 col-xs-12"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number4 index3 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">YOUR CODES GOES HERE</code></div>
+                      <div class="line number5 index4 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number6 index5 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                          class="html color1">class</code><code class="html plain">=</code><code
+                          class="html string">"col-lg-4 col-md-6 col-sm-6 col-xs-12"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number7 index6 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">YOUR CODES GOES HERE</code></div>
+                      <div class="line number8 index7 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number9 index8 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;</code><code class="html keyword">div</code> <code
+                          class="html color1">class</code><code class="html plain">=</code><code
+                          class="html string">"col-lg-4 col-md-6 col-sm-6 col-xs-12"</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number10 index9 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">YOUR CODES GOES HERE</code></div>
+                      <div class="line number11 index10 alt2"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                          class="html plain">&lt;/</code><code class="html keyword">div</code><code
+                          class="html plain">&gt;</code></div>
+                      <div class="line number12 index11 alt1 highlighted"><code
+                          class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code
+                          class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                      <div class="line number13 index12 alt2"><code class="html plain">&lt;/</code><code
+                          class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p>
+          If you need more information, please visit
+          <a href="http://getbootstrap.com/css/#grid" target="_blank">here</a>
+        </p>
+      </section>
+      <section id="css_structure">
+        <div class="page-header">
+          <h3>CSS Structure</h3>
+          <hr class="notop" />
+        </div>
+        <div>
+          The organization of the CSS is one of our priorities.
+        </div>
+        <div>
+          These are the CSS file we&#39;re using in the template:
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <pre class="prettyprint lang-html linenums">
   - css/
     - style.css                           - (Main CSS file) 
     - animate-on-scroll/slick.css         - (Animate on Scroll CSS file) 
     - bootstrap/bootstrap.css             - (Bootstrap CSS file) 
     - easyScrollDots.min.css              - (Easy Scroll DotsCSS file)
 </pre>
-    </section>
-    <section id="javascript">
-      <div class="page-header">
-        <h3>JavaScript</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        jQuery - is a Javascript library that greatly reduces the amount of
-        code that you must write.
-      </div>
-      <div>
-        For more information, please visit
-        <a href="http://www.jquery.com" target="_blank">http://www.jquery.com/</a>
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        All the JavaScript libraries and files are included at the bottom of
-        every HTML page like this:
-      </div>
-      <div>
-        <pre class="prettyprint lang-html linenums">
+      </section>
+      <section id="javascript">
+        <div class="page-header">
+          <h3>JavaScript</h3>
+          <hr class="notop" />
+        </div>
+        <div>
+          jQuery - is a Javascript library that greatly reduces the amount of
+          code that you must write.
+        </div>
+        <div>
+          For more information, please visit
+          <a href="http://www.jquery.com" target="_blank">http://www.jquery.com/</a>
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          All the JavaScript libraries and files are included at the bottom of
+          every HTML page like this:
+        </div>
+        <div>
+          <pre class="prettyprint lang-html linenums">
 &lt;!-- Main Jquery JS --&gt;
 &lt;script src=&quot;./js/jQuery/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
 &lt;!-- Popper JS --&gt;
@@ -292,141 +530,112 @@
 &lt;!-- Custom JS --&gt;
 &lt;script src=&quot;./js/script.js&quot;&gt;&lt;/script&gt;
 </pre>
-      </div>
-      <p>&nbsp;</p>
-    </section>
-    <section id="fonts">
-      <div class="page-header">
-        <h3>Fonts</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        To change the embedded font, please take a look in the head part of
-        assets/css/theme.css:
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        <pre class="prettyprint lang-html linenums">
+        </div>
+        <p>&nbsp;</p>
+      </section>
+      <section id="fonts">
+        <div class="page-header">
+          <h3>Fonts</h3>
+          <hr class="notop" />
+        </div>
+        <div>
+          To change the embedded font, please take a look in the head part of
+          assets/css/theme.css:
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <pre class="prettyprint lang-html linenums">
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
         </pre>
-      </div>
-      <p>&nbsp;</p>
-      <div>
-        <div>
-          To change the font, first go to http://www.google.com/webfonts
-          choose a font and add the generated code to the top of global.css.
         </div>
+        <p>&nbsp;</p>
         <div>
-          &nbsp;
-        </div>
-        <div>
-          Then edit --header-font or --text-font in
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          <pre class="prettyprint lang-css linenums">
+          <div>
+            To change the font, first go to http://www.google.com/webfonts
+            choose a font and add the generated code to the top of global.css.
+          </div>
+          <div>
+            &nbsp;
+          </div>
+          <div>
+            Then edit --header-font or --text-font in
+          </div>
+          <div>
+            &nbsp;
+          </div>
+          <div>
+            <pre class="prettyprint lang-css linenums">
 :root {
   --main-font-family: "Roboto", sans-serif;
   --main-bg: #050315;
   --main-txt-color: #c280ff;
   --main-padding: 15px;
 }</pre>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- <section id="icons">
-      <div class="page-header">
-        <h3>Icons/Illustrators</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        All font are located in the images directory
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        <p>
-          We are using svg fonts which you can get more and add to
-          assets/images/icons
-        </p>
-      </div>
-      <pre class="prettyprint lang-html linenums">
-&lt;a href=&quot;./residence.html&quot; class=&quot;link mr-3 mt-2 d-block&quot;
-    &gt;See More
-    &lt;img
-      src=&quot;./assets/images/icons/tick-arrow-right.svg&quot;
-      class=&quot;icon&quot;
-      alt=&quot;Icon&quot;
-    /&gt;
-  &lt;/a&gt;
-        </pre>
-      <div>
-        &nbsp;
-      </div>
-    </section> -->
-    <section id="logo">
-      <div class="page-header">
-        <h3>Logo</h3>
-        <hr class="notop" />
-      </div>
-      <p>
-        Open index.html and find this part of code. Just change path to your
-        image logo
-      </p>
-      <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./img/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
-</pre>
-    </section>
-    <section id="sources_and_credits">
-      <div class="page-header">
-        <h3>Sources and Credits</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        Fonts:
-      </div>
-      <div>
-        <strong>Google Fonts</strong> -
-        <a href="http://www.google.com/webfonts/">http://www.google.com/webfonts/</a>
-      </div>
-      <div></div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        Scripts:
-      </div>
-      <div>
-        <strong>jQuery</strong> -
-        <a href="http://www.jquery.com/">http://www.jquery.com/</a>
-      </div>
-      <div>
-        <strong>Bootstrap Framework</strong> -
-        <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a>
-      </div>
-      <div>
-        <strong>Popper Js</strong> -&nbsp;<a href="https://popper.js.org/">https://popper.js.org/</a>
-      </div>
+      </section>
 
-      <div>
-        <strong>easy Scroll Dots</strong>&nbsp;2 -
-        <a href="https://github.com/Superhands89/EasyScrollDots"
-          target="_blank">https://github.com/Superhands89/EasyScrollDots</a>
-      </div>
-      <div>
-        <strong>Animate on Scroll</strong> -&nbsp;<a
-          href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
-      </div>
-      <div>
-        &nbsp;
-      </div>
-    </section>
-  </div>
+      <section id="logo">
+        <div class="page-header">
+          <h3>Logo</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          Open index.html and find this part of code. Just change path to your
+          image logo
+        </p>
+        <pre class="prettyprint lang-html linenums">
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./img/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...
+</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+</pre>
+      </section>
+      <section id="sources_and_credits">
+        <div class="page-header">
+          <h3>Sources and Credits</h3>
+          <hr class="notop" />
+        </div>
+        <div>
+          Fonts:
+        </div>
+        <div>
+          <strong>Google Fonts</strong> -
+          <a href="http://www.google.com/webfonts/">http://www.google.com/webfonts/</a>
+        </div>
+        <div></div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          Scripts:
+        </div>
+        <div>
+          <strong>jQuery</strong> -
+          <a href="http://www.jquery.com/">http://www.jquery.com/</a>
+        </div>
+        <div>
+          <strong>Bootstrap Framework</strong> -
+          <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a>
+        </div>
+        <div>
+          <strong>Popper Js</strong> -&nbsp;<a href="https://popper.js.org/">https://popper.js.org/</a>
+        </div>
+
+        <div>
+          <strong>Easy Scroll Dots</strong> -
+          <a href="https://github.com/Superhands89/EasyScrollDots"
+            target="_blank">https://github.com/Superhands89/EasyScrollDots</a>
+        </div>
+        <div>
+          <strong>Animate on Scroll</strong> -&nbsp;<a
+            href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+        </div>
+        <div>
+          &nbsp;
+        </div>
+      </section>
+    </div>
 </body>
 
 </html>

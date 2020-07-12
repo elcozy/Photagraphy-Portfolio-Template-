@@ -1,3 +1,7 @@
+$('.carouselhero').carousel({
+    interval: 3500
+})
+
 $(document).ready(function () {
     $("#loadMore").click(function () {
         if ($("#moreImages").hasClass("hide")) {
